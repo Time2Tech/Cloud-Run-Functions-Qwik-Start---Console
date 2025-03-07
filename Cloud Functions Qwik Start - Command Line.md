@@ -3,14 +3,11 @@
 ### Run the following Commands in CloudShell
 
 ```
-export REGION=
-```
-```
-curl -LO raw.githubusercontent.com/QUICK-GCP-LAB/2-Minutes-Labs-Solutions/main/Cloud%20Functions%20Qwik%20Start%20-%20Command%20Line/gsp080.sh
+curl -LO raw.githubusercontent.com/quiccklabs/Labs_solutions/refs/heads/master/Cloud%20Run%20Functions%20Qwik%20Start%20Console/quicklabgsp081.sh
 
-sudo chmod +x gsp080.sh
+sudo chmod +x quicklabgsp081.sh
 
-./gsp080.sh
+./quicklabgsp081.sh
 ```
 
 ### Congratulations 🎉 for completing the Lab !
