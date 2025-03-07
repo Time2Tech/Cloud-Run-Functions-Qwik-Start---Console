@@ -1,6 +1,4 @@
-# Cloud Functions: Qwik Start - Command Line || [GSP080](https://www.cloudskillsboost.google/focuses/916?parent=catalog) ||
-
-## Solution [here](https://youtu.be/xcl-Ai6bG8Q)
+# Cloud Functions: Qwik Start - Command Line 
 
 ### Run the following Commands in CloudShell
 
@@ -20,7 +18,3 @@ sudo chmod +x gsp080.sh
 ##### *You Have Successfully Demonstrated Your Skills And Determination.*
 
 #### *Well done!*
-
-#### Don't Forget to Join the [Telegram Channel](https://t.me/quickgcplab) & [Discussion group](https://t.me/quickgcplabchats)
-
-# [QUICK GCP LAB](https://www.youtube.com/@quickgcplab)
