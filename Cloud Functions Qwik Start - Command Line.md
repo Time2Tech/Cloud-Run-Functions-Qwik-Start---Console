@@ -3,11 +3,26 @@
 ### Run the following Commands in CloudShell
 
 ```
-curl -LO raw.githubusercontent.com/quiccklabs/Labs_solutions/refs/heads/master/Cloud%20Run%20Functions%20Qwik%20Start%20Console/quicklabgsp081.sh
+export REGION=
+```
 
-sudo chmod +x quicklabgsp081.sh
-
-./quicklabgsp081.sh
+```
+gcloud config set compute/region $REGION
+mkdir gcf_hello_world
+cd gcf_hello_world
+cat > index.js << EOF
+exports.helloWorld = (data, context) => {
+const pubSubMessage = data;
+const name = pubSubMessage.data
+    ? Buffer.from(pubSubMessage.data, 'base64').toString() : "Hello World";
+console.log("My Cloud Function: "+name);
+};
+EOF
+gsutil mb -p $DEVSHELL_PROJECT_ID gs://$DEVSHELL_PROJECT_ID
+gcloud functions deploy helloWorld \
+--stage-bucket $DEVSHELL_PROJECT_ID \
+--trigger-topic hello_world \
+--runtime nodejs20
 ```
 
 ### Congratulations 🎉 for completing the Lab !
